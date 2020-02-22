@@ -61,11 +61,8 @@
     "@mocks": "./dist/mocks"
   },
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ratt-spar-i-uppsala-ab/v4-backend.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/ratt-spar-i-uppsala-ab/v4-backend.git",
+  "author": "TrushanT <trushant.ivision@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ratt-spar-i-uppsala-ab/v4-backend/issues"
@@ -85,6 +82,7 @@
     "mongodb": "^3.3.3",
     "mysql": "^2.17.1",
     "nodemailer": "^6.3.1",
+    "now": "^17.0.4",
     "reflect-metadata": "^0.1.13",
     "saslprep": "^1.0.3",
     "uuid-mongodb": "^2.1.1"

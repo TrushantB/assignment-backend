@@ -1,0 +1,41 @@
+{
+    "version": 2,
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "routes": [
+      {
+        "src": "/api/login/",
+        "dest": "/index.js",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/api/login/register",
+        "dest": "/index.js",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/api/login/refresh-token/:token",
+        "dest": "/index.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/api/posts/",
+        "dest": "/index.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/api/posts/",
+        "dest": "/index.js",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/api/posts/:id",
+        "dest": "/index.js",
+        "methods": ["PUT"]
+      },
+      {
+        "src": "/api/posts/:id",
+        "dest": "/index.js",
+        "methods": ["DELETE"]
+      }
+    ]
+  }
