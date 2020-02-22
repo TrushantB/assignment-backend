@@ -102,7 +102,7 @@ async function start(): Promise<void> {
           throw err; //
       }
       process.stdout.write(`API Up and running on port  ${process.env.PORT} ${process.env.DEBUG ? ' in debug mode' : ''}...\n`);
-      apiServer.listen(process.env.PORT, (): void => {
+      apiServer.listen(process.env.PORT || 3000, (): void => {
         process.stdout.write('Server running!\n');
       });
     }
